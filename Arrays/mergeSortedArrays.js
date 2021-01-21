@@ -1,4 +1,4 @@
-//first way
+//merge sorted arrays
 const array1 = [0, 3, 4, 31];
 const array2 = [4, 6, 30];
 
