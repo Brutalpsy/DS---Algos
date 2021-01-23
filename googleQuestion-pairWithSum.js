@@ -3,6 +3,7 @@ const array2 = [1, 2, 4, 4];
 const array3 = [6, 4, 3, 2, 1, 7];
 const sum = 9;
 
+// O(n)
 const betterApproach = (arr, sum) => {
   const mySet = new Set();
   for (let i = 0; i < arr.length; i++) {
@@ -13,7 +14,7 @@ const betterApproach = (arr, sum) => {
   }
   return false;
 };
-
+// O (n^2)
 const naiveApproach = (array, sum) => {
   for (let i = 0; i < array.length; i++) {
     for (let j = i + 1; j < array.length; j++) {
@@ -25,5 +26,5 @@ const naiveApproach = (array, sum) => {
   return false;
 };
 
-console.warn(naiveApproach(array1, sum));
-console.warn(betterApproach(array1, sum));
+console.warn(`O (n^2) ${naiveApproach(array1, sum)}`);
+console.warn(`0(n) ${betterApproach(array1, sum)}`);

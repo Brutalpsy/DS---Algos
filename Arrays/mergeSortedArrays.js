@@ -5,6 +5,7 @@ const array2 = [4, 6, 30];
 const mergeSortedArrays = (array1, array2) =>
   array1.concat(array2).sort((a, b) => a - b);
 
+//O(n)
 const mergeSortedArrays2 = (array1, array2) => {
   let array1Item = array1[0];
   let array2Item = array2[0];
@@ -26,6 +27,7 @@ const mergeSortedArrays2 = (array1, array2) => {
   return mergedArray;
 };
 
+//O (n^2)
 const mergeSortedArrays3 = (array1, array2) => {
   var mergedArray = [];
 
@@ -63,9 +65,10 @@ console.log(
     array2
   )}`
 );
-console.info(
-  `Works for sorted arrays only: ${mergeSortedArrays2(array1, array2)}`
-);
+console.info(`O(n): ${mergeSortedArrays2(array1, array2)}`);
 console.error(
-  `Not carring if sorted or not:  ${mergeSortedArrays3(array1, array2)}`
+  `O(n^2) - Not carring if sorted or not:  ${mergeSortedArrays3(
+    array1,
+    array2
+  )}`
 );
