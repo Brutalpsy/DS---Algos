@@ -5,4 +5,5 @@
 // import './Arrays/mergeSortedArrays.js';
 // import './Arrays/twoSum.js';
 // import './Arrays/maximumSubarray.js';
-import './Arrays/moveZeroes.js';
+// import './Arrays/moveZeroes.js';
+import './Arrays/containsDuplicate.js';
