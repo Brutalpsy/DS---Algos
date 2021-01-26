@@ -6,4 +6,5 @@
 // import './Arrays/twoSum.js';
 // import './Arrays/maximumSubarray.js';
 // import './Arrays/moveZeroes.js';
-import './Arrays/containsDuplicate.js';
+// import './Arrays/containsDuplicate.js';
+import './Arrays/rotateArray.js';

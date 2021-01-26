@@ -1,0 +1,43 @@
+// https://leetcode.com/problems/rotate-array/description/
+// Given an array, rotate the array to the right by k steps, where k is non-negative.
+
+// Input: nums = [1,2,3,4,5,6,7], k = 3
+// Output: [5,6,7,1,2,3,4]
+// Explanation:
+// rotate 1 steps to the right: [7,1,2,3,4,5,6]
+// rotate 2 steps to the right: [6,7,1,2,3,4,5]
+// rotate 3 steps to the right: [5,6,7,1,2,3,4]
+
+let nums = [1, 2, 3, 4, 5],
+  k = 2;
+
+//Using the extension methods
+const rotateArray = (nums, k) => {
+  k = k % nums.length;
+  nums.unshift(...nums.splice(-k));
+};
+
+//O (n)
+const rotateArray2 = (nums, k) => {
+  // speed up the rotation
+
+  k = k % nums.length;
+  reverse(nums, 0, nums.length - 1);
+  reverse(nums, 0, k - 1);
+  reverse(nums, k, nums.length - 1);
+};
+
+const reverse = (nums, start, end) => {
+  while (start < end) {
+    let temp = nums[start];
+    nums[start] = nums[end];
+    nums[end] = temp;
+    start++;
+    end--;
+  }
+};
+
+// rotateArray(nums, k);
+rotateArray2(nums, k);
+
+console.warn(nums);
