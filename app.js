@@ -8,4 +8,6 @@
 // import './Arrays/moveZeroes.js';
 // import './Arrays/containsDuplicate.js';
 // import './Arrays/rotateArray.js';
-import './Arrays/longestWord.js';
+// import './Arrays/longestWord.js';
+
+import './Hash Table/HashTable.js';
