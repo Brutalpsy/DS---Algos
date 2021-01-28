@@ -10,4 +10,5 @@
 // import './Arrays/rotateArray.js';
 // import './Arrays/longestWord.js';
 
-import './Hash Table/HashTable.js';
+//import './Hash Table/HashTable.js';
+import './Hash Table/firstRecurringCharacter.js';
