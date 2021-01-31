@@ -12,4 +12,6 @@
 
 //import './Hash Table/HashTable.js';
 // import './Hash Table/firstRecurringCharacter.js';
+
 import './Linked List/LinkedList.js';
+// import './Linked List/DoublyLinkedList.js';
