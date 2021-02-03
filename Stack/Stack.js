@@ -5,6 +5,7 @@ class Node {
   }
 }
 
+// Linked List Stack implementation
 class Stack {
   constructor() {
     this.top = null;
