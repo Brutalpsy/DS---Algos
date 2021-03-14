@@ -30,5 +30,5 @@
 // import './Algorithms/Recursion/factorial.js';
 // import './Algorithms/Recursion/reverseString.js';
 // import './Algorithms/Sorting/bubbleSort.js';
-import './Algorithms/Sorting/selectionSort.js';
-
+// import './Algorithms/Sorting/selectionSort.js';
+import './Algorithms/Sorting/insertionSort.js';
