@@ -126,20 +126,109 @@ class BinarySearchTree {
       }
     }
   }
+
+  breathFirstSearch() {
+    let currentNode = this.root;
+    let list = [];
+    let queue = [];
+    queue.push(currentNode);
+
+    while (queue.length > 0) {
+      currentNode = queue.shift();
+      list.push(currentNode.value);
+      if (currentNode.left) {
+        queue.push(currentNode.left);
+      }
+      if (currentNode.right) {
+        queue.push(currentNode.right);
+      }
+    }
+    return list;
+  }
+
+  breathFirstSearchRecursive(queue, list) {
+    if (!queue.length) {
+      return list;
+    }
+    const currentNode = queue.shift();
+    list.push(currentNode.value);
+
+    if (currentNode.left) {
+      queue.push(currentNode.left);
+    }
+    if (currentNode.right) {
+      queue.push(currentNode.right);
+    }
+
+    return this.breathFirstSearchRecursive(queue, list);
+  }
+
+  DFSInOrder() {
+    return traverseInOrder(this.root, []);
+  }
+
+  DFSPostOrder() {
+    return traversePostOrder(this.root, []);
+  }
+
+  DFSPreOrder() {
+    return traversePreOrder(this.root, []);
+  }
 }
 
 const tree = new BinarySearchTree();
-tree.insert(60);
-tree.insert(30);
-tree.insert(51);
-tree.insert(55);
-tree.insert(54);
-tree.insert(38);
-tree.insert(44);
-tree.remove(51);
-console.log(JSON.stringify(traverse(tree.root)));
-console.log(tree.lookup(51));
-console.log(tree.lookup(55));
+tree.insert(9);
+tree.insert(4);
+tree.insert(6);
+tree.insert(20);
+tree.insert(170);
+tree.insert(15);
+tree.insert(1);
+// console.log(JSON.stringify(traverse(tree.root)));
+// console.log(tree.lookup(9));
+// console.log(tree.lookup(170));
+// console.log(tree.breathFirstSearch());
+// console.log(tree.breathFirstSearchRecursive([tree.root], []));
+console.log(tree.DFSInOrder());
+console.log(tree.DFSPreOrder());
+console.log(tree.DFSPostOrder());
+
+function traverseInOrder(node, list) {
+  console.log(node.value);
+  if (node.left) {
+    traverseInOrder(node.left, list);
+  }
+  list.push(node.value);
+  if (node.right) {
+    traverseInOrder(node.right, list);
+  }
+
+  return list;
+}
+
+function traversePreOrder(node, list) {
+  list.push(node.value);
+
+  if (node.left) {
+    traversePreOrder(node.left, list);
+  }
+  if (node.right) {
+    traversePreOrder(node.right, list);
+  }
+
+  return list;
+}
+function traversePostOrder(node, list) {
+  if (node.left) {
+    traversePostOrder(node.left, list);
+  }
+  if (node.right) {
+    traversePostOrder(node.right, list);
+  }
+  list.push(node.value);
+
+  return list;
+}
 
 function traverse(node) {
   const tree = { value: node.value };

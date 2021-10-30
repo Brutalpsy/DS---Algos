@@ -20,7 +20,7 @@
 
 // import './Queue/Queue.js';
 // import './Queue/ImplementQueueUsingStacks.js';
-// import './Trees/BinarySearchTree.js';
+import './Trees/BinarySearchTree.js';
 // import './Graph/Graph.js';
 
 //Algorithms
@@ -34,4 +34,4 @@
 // import './Algorithms/Sorting/insertionSort.js';
 // import './Algorithms/Sorting/mergeSort.js';
 // import './Algorithms/Sorting/quickSort.js';
-import './Algorithms/Sorting/heapSort.js';
+// import './Algorithms/Sorting/heapSort.js';
