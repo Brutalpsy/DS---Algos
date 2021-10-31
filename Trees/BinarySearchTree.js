@@ -6,7 +6,7 @@ class Node {
   }
 }
 
-class BinarySearchTree {
+export class BinarySearchTree {
   constructor() {
     this.root = null;
   }
@@ -189,9 +189,9 @@ tree.insert(1);
 // console.log(tree.lookup(170));
 // console.log(tree.breathFirstSearch());
 // console.log(tree.breathFirstSearchRecursive([tree.root], []));
-console.log(tree.DFSInOrder());
-console.log(tree.DFSPreOrder());
-console.log(tree.DFSPostOrder());
+// console.log(tree.DFSInOrder());
+// console.log(tree.DFSPreOrder());
+// console.log(tree.DFSPostOrder());
 
 function traverseInOrder(node, list) {
   console.log(node.value);

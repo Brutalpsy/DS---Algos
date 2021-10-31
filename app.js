@@ -20,7 +20,8 @@
 
 // import './Queue/Queue.js';
 // import './Queue/ImplementQueueUsingStacks.js';
-import './Trees/BinarySearchTree.js';
+// import './Trees/BinarySearchTree.js';
+import './Trees/validateBirarySearchTree.js';
 // import './Graph/Graph.js';
 
 //Algorithms
