@@ -22,5 +22,23 @@ const fibonacciRecursive = (n) => {
   return fibonacciRecursive(n - 1) + fibonacciRecursive(n - 2);
 };
 
+const fibonacciMasterRecursive = () => {
+  const cache = {};
+  return function fib(n) {
+    if (cache[n]) {
+      return cache[n];
+    }
+
+    if (n <= 1) {
+      return n;
+    }
+
+    cache[n] = fib(n - 1) + fib(n - 2);
+    return cache[n];
+  };
+};
+
 console.log(fibonacciIterative(8));
 console.log(fibonacciRecursive(8));
+const fib = fibonacciMasterRecursive();
+console.log(fib(8));

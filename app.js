@@ -21,13 +21,13 @@
 // import './Queue/Queue.js';
 // import './Queue/ImplementQueueUsingStacks.js';
 // import './Trees/BinarySearchTree.js';
-import './Trees/validateBirarySearchTree.js';
+// import './Trees/validateBirarySearchTree.js';
 // import './Graph/Graph.js';
 
 //Algorithms
 
 // import './Algorithms/Recursion/factorial.js';
-// import './Algorithms/Recursion/fibonacci.js';
+import './Algorithms/Recursion/fibonacci.js';
 // import './Algorithms/Recursion/factorial.js';
 // import './Algorithms/Recursion/reverseString.js';
 // import './Algorithms/Sorting/bubbleSort.js';
