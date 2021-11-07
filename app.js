@@ -27,7 +27,6 @@
 //Algorithms
 
 // import './Algorithms/Recursion/factorial.js';
-import './Algorithms/Recursion/fibonacci.js';
 // import './Algorithms/Recursion/factorial.js';
 // import './Algorithms/Recursion/reverseString.js';
 // import './Algorithms/Sorting/bubbleSort.js';
@@ -36,3 +35,6 @@ import './Algorithms/Recursion/fibonacci.js';
 // import './Algorithms/Sorting/mergeSort.js';
 // import './Algorithms/Sorting/quickSort.js';
 // import './Algorithms/Sorting/heapSort.js';
+
+// dynamic programming
+import './Dynamic Programming/house-robber.js';
