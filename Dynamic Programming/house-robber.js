@@ -6,7 +6,10 @@ var robRecursive = function (nums) {
     if (index < 0) return 0;
     if (memo[index] >= 0) return memo[index];
 
-    memo[index] = Math.max(helper(index - 2) + nums[index], helper(index - 1));
+    let first = helper(index - 2) + nums[index];
+    let second = helper(index - 1);
+
+    memo[index] = Math.max(first, second);
     return memo[index];
   };
   return helper(nums.length - 1);
