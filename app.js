@@ -9,6 +9,7 @@
 // import './Arrays/containsDuplicate.js';
 // import './Arrays/rotateArray.js';
 // import './Arrays/longestWord.js';
+import './Arrays/containerWIthMostWater.js';
 
 //import './Hash Table/HashTable.js';
 // import './Hash Table/firstRecurringCharacter.js';
@@ -39,4 +40,4 @@
 // dynamic programming
 // import './Dynamic Programming/house-robber.js';
 // import './Dynamic Programming/bestTimeToBuyAndSellStock.js';
-import './Dynamic Programming/climbinStairs.js';
+// import './Dynamic Programming/climbinStairs.js';
