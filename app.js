@@ -9,9 +9,10 @@
 // import './Arrays/containsDuplicate.js';
 // import './Arrays/rotateArray.js';
 // import './Arrays/longestWord.js';
-import './Arrays/containerWIthMostWater.js';
+// import './Arrays/containerWIthMostWater.js';
+import './Arrays/trapping-rain-water.js';
 
-//import './Hash Table/HashTable.js';
+// import './Hash Table/HashTable.js';
 // import './Hash Table/firstRecurringCharacter.js';
 
 // import './Linked List/LinkedList.js';
@@ -25,7 +26,7 @@ import './Arrays/containerWIthMostWater.js';
 // import './Trees/validateBirarySearchTree.js';
 // import './Graph/Graph.js';
 
-//Algorithms
+// Algorithms
 
 // import './Algorithms/Recursion/factorial.js';
 // import './Algorithms/Recursion/factorial.js';
