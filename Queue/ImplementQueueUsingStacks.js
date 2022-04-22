@@ -11,7 +11,7 @@ class CrazyQueue {
 
   enqueue(value) {
     while (this.popStack.length) {
-      this.pushStack(this.popStack.pop());
+      this.pushStack.push(this.popStack.pop());
     }
     return this.pushStack.push(value);
   }
@@ -34,5 +34,7 @@ myQueue.enqueue('Danijel');
 myQueue.enqueue('Milica');
 myQueue.enqueue('Bojana');
 myQueue.enqueue('Mirsad');
+console.log(myQueue.peek());
 myQueue.dequeue();
+myQueue.enqueue('Nemanja');
 console.log(myQueue.peek());
