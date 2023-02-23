@@ -27,6 +27,10 @@ class CrazyQueue {
     }
     return this.popStack[this.popStack.length - 1];
   }
+
+  empty() {
+    return this.pushStack.length === 0 && this.popStack.length === 0;
+  }
 }
 
 const myQueue = new CrazyQueue();
