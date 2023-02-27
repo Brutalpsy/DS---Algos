@@ -35,6 +35,7 @@
 
 // Algorithms
 
+import './Algorithms/Recursion/basic/basic-rules-of-recursion.js';
 // import './Algorithms/Recursion/factorial.js';
 // import './Algorithms/Recursion/factorial.js';
 // import './Algorithms/Recursion/reverseString.js';
@@ -52,4 +53,4 @@
 
 //
 // import './Stack/validParentheses.js';
-import './Stack/minRemoveToMakeValid.js';
+// import './Stack/minRemoveToMakeValid.js';
