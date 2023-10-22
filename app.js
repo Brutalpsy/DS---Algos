@@ -48,7 +48,8 @@
 // import './Algorithms/Sorting/quickSort.js';
 // import './Algorithms/Sorting/heapSort.js';
 
-import './Algorithms/Search/binarySearch.js';
+// import './Algorithms/Search/binarySearch.js';
+import './Algorithms/Search/findFirstAndLastPositionOfElementInSortedArray.js';
 
 // dynamic programming
 // import './Dynamic Programming/house-robber.js';
