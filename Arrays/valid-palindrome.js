@@ -50,6 +50,19 @@ const isPalindrome = (s) => {
 //   return reversed === s;
 // };
 
+//recursive approach
+const isPalindromeRecursive = (s) => {
+  s = s.replace(/[^A-Za-z0-9]/g, '').toLowerCase();
+  if (s.length === 0 || s.length === 1) {
+    return true;
+  }
+
+  if (s[0] === s[s.length - 1]) {
+    return isPalindrome(s.substring(1, s.length - 1));
+  }
+  return false;
+};
+
 ['aabaa', 'aabbaa', 'abc', 'a', '', 'A man, a plan, a canal: Panama'].forEach(
   (string) => console.log(`${string} - ${isPalindrome(string)}`)
 );
