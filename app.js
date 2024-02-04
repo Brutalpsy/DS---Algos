@@ -40,7 +40,8 @@
 // import './Algorithms/Recursion/factorial.js';
 // import './Algorithms/Recursion/reverseString.js';
 // import './Algorithms/Recursion/kth-largest-element.js';
-import './Algorithms/Recursion/findBinary.js';
+// import './Algorithms/Recursion/findBinary.js';
+import './Algorithms/Recursion/sum-of-natural-numbers.js';
 
 // import './Algorithms/Sorting/bubbleSort.js';
 // import './Algorithms/Sorting/selectionSort.js';
